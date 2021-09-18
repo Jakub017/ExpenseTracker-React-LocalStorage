@@ -1,0 +1,148 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgb(238, 221, 192);
+    --border-color: rgb(155, 108, 27);
+    --green: rgb(90, 143, 73);
+}
+
+body {
+    background-color: var(--background-color);
+
+}
+
+.addPanel {
+    padding: 20px;
+    width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.form {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label.name,
+label.date,
+label.number {
+    width: 7%;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+label.name {
+    margin-top: 0;
+}
+
+label.number {
+    width: 9.5%;
+}
+
+.expenseName {
+    width: 93%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+input.date,
+input.value {
+    width: 43%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    outline: none;
+    margin-top: 20px;
+}
+
+input.value {
+    width: 40.5%;
+}
+
+button.add {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--green);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.summary {
+    width: 1200px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border-color);
+}
+
+.upper {
+    width: 100%;
+    display: flex;
+}
+
+.upper .name,
+.upper .date,
+.upper .value {
+    width: 33.33%;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.expense {
+    width: 100%;
+    display: flex;
+}
+
+.expense .name,
+.expense .date,
+.expense .value {
+    width: 33.333333333%;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fas {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.amount {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: right;
+}
