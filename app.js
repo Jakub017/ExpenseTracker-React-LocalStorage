@@ -89,10 +89,11 @@ class App extends React.Component {
         const element = expenses.filter(expense => expense.id === id);
         const index = expenses.findIndex(expense => expense.id === id);
         total -= element[0].value;
+        total = total.toFixed(2);
         expenses.splice(index, 1);
         this.setState({
             expenses: expenses,
-            total: total,
+            total: Number(total),
         })
         localStorage.setItem('expenses', JSON.stringify(expenses));
         localStorage.setItem('total', JSON.stringify(total));
